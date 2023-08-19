@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Login from './Component/login';
+import image from './img/icons8-waving-hand-emoji-48.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <div className='all-container'>
+    <div className="container">
+      <div className='welcome'>Welcome Back! <img className="icon" src={image}></img></div>
+      <div  className="sign-para">Sign in to your account</div>
+      <div><Login/></div>
+      <div className='forgot'>Forgot your password?</div>
+    </div>
+    <div className='no-account'>Don't have an account? <a href='#'>Sign up</a></div>
+    </div>
     </div>
   );
 }
